@@ -17,8 +17,7 @@ The controller will scrape the metrics of the node it is running an via the [met
 
 ## Acknowledgements ##
 
-This project is based on the [blinkt-k8s-controller](https://github.com/apprenda/blinkt-k8s-controller) of @apprenda
-and draws inspiration and borrows heavily from the work done by @alexellis on [Docker on Raspberry Pis](http://blog.alexellis.io/visiting-pimoroni/) and his [Blinkt Go libraries](https://github.com/alexellis/blinkt_go), themselves based on work by @gamaral for using the `/sys/` fs interface [instead of special libraries or elevated privileges](https://guillermoamaral.com/read/rpi-gpio-c-sysfs/) to `/dev/mem` on the Raspberry Pi.
+Based on the [blinkt-k8s-controller](https://github.com/apprenda/blinkt-k8s-controller) of @apprenda, this project draws inspiration and borrows heavily from the work done by @alexellis on [Docker on Raspberry Pis](http://blog.alexellis.io/visiting-pimoroni/) and his [Blinkt Go libraries](https://github.com/alexellis/blinkt_go), themselves based on work by @gamaral for using the `/sys/` fs interface [instead of special libraries or elevated privileges](https://guillermoamaral.com/read/rpi-gpio-c-sysfs/) to `/dev/mem` on the Raspberry Pi.
 
 ## Requirements ##
 
