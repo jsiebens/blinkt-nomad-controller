@@ -1,4 +1,4 @@
-module github.com/jsiebens/nomad-blinkt
+module github.com/jsiebens/blinkt-nomad-controller
 
 go 1.13
 
