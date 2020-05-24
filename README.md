@@ -1,4 +1,6 @@
-# A Nomad Controller for the Pimoroni Blinkt on a Raspberry Pi #
+# A Nomad Controller for the Pimoroni Blinkt! #
+
+![example](./images/picture.png)
 
 A simple way to physically/visually display the number of allocations running on Raspberry Pi-based [HashiCorp](https://www.hashicorp.com) [Nomad](https://github.com/hashicorp/nomad) worker nodes by using a [Pimoroni Blinkt!](https://shop.pimoroni.com/products/blinkt).
 Alternatively, it can display the amount of allocated cpu, memory, disk or network of the worker node.
@@ -20,7 +22,7 @@ and draws inspiration and borrows heavily from the work done by @alexellis on [D
 
 ## Requirements ##
 
-A Raspberry Pi-based Nomad cluster, where the raw_exec driver is enabled on the worker nodes.
+A Raspberry Pi-based Nomad cluster, where the [raw_exec](https://www.nomadproject.io/docs/drivers/raw_exec/) driver is enabled on the worker nodes.
 
 Physically install a [Pimoroni Blinkt](https://shop.pimoroni.com/products/blinkt) on all the Raspberry Pi worker nodes you want to use for display. **No additional sofware or setup is required for the Blinkt**.
 
