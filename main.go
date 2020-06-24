@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/jsiebens/nomad-blinkt/pkg/blinkt"
-	"github.com/jsiebens/nomad-blinkt/pkg/metrics"
+	"github.com/jsiebens/blinkt-nomad-controller/pkg/blinkt"
+	"github.com/jsiebens/blinkt-nomad-controller/pkg/metrics"
 	"os"
 	"os/signal"
 	"syscall"
@@ -29,7 +29,6 @@ func main() {
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGTERM, syscall.SIGKILL)
 
-	var step = 0
 	for {
 		select {
 		case <-signalChan:
@@ -57,7 +56,6 @@ func main() {
 
 				bl.Show()
 
-				step++
 			} else {
 				bl.FlashAll(2, "FF0000")
 			}
